@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8571C0BA2434827600A70221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8571C0B92434827600A70221 /* main.cpp */; };
+		85DB75B22435C5A80037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
+		85DB75B52435C5F50037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		8571C0B62434827600A70221 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		8571C0B92434827600A70221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		85DB75B12435C5A80037E19E /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DB75B52435C5F50037E19E /* libglfw.3.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +48,7 @@
 			children = (
 				8571C0B82434827600A70221 /* LearnOpenGL */,
 				8571C0B72434827600A70221 /* Products */,
+				85DB75B32435C5F50037E19E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +63,18 @@
 		8571C0B82434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				85DB75B12435C5A80037E19E /* glad.c */,
 				8571C0B92434827600A70221 /* main.cpp */,
 			);
 			path = LearnOpenGL;
+			sourceTree = "<group>";
+		};
+		85DB75B32435C5F50037E19E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8571C0BA2434827600A70221 /* main.cpp in Sources */,
+				85DB75B22435C5A80037E19E /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +257,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WY58VRAZ93;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +272,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WY58VRAZ93;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
