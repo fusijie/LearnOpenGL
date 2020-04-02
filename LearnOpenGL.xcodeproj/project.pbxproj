@@ -10,10 +10,34 @@
 		8571C0BA2434827600A70221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8571C0B92434827600A70221 /* main.cpp */; };
 		85DB75B22435C5A80037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
 		85DB75B52435C5F50037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
+		85DB75BC2435CE370037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
+		85DB75BD2435CE370037E19E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B72435CD800037E19E /* main.cpp */; };
+		85DB75BF2435CE370037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
+		85DB75C82435E4810037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
+		85DB75CB2435E4810037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
+		85DB75D22435E4A50037E19E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75D12435E4A50037E19E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8571C0B42434827600A70221 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		85DB75C02435CE370037E19E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		85DB75CC2435E4810037E19E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -29,6 +53,10 @@
 		8571C0B92434827600A70221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		85DB75B12435C5A80037E19E /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		85DB75B72435CD800037E19E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		85DB75C42435CE370037E19E /* 01Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01Triangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		85DB75D02435E4810037E19E /* 02Rectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 02Rectangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		85DB75D12435E4A50037E19E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +65,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DB75B52435C5F50037E19E /* libglfw.3.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85DB75BE2435CE370037E19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DB75BF2435CE370037E19E /* libglfw.3.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85DB75CA2435E4810037E19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DB75CB2435E4810037E19E /* libglfw.3.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				8571C0B62434827600A70221 /* LearnOpenGL */,
+				85DB75C42435CE370037E19E /* 01Triangle */,
+				85DB75D02435E4810037E19E /* 02Rectangle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +109,8 @@
 		8571C0B82434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				85DB75C52435E4520037E19E /* 02_rectangle */,
+				85DB75B62435CD460037E19E /* 01_triangle */,
 				85DB75B12435C5A80037E19E /* glad.c */,
 				8571C0B92434827600A70221 /* main.cpp */,
 			);
@@ -75,6 +123,22 @@
 				85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85DB75B62435CD460037E19E /* 01_triangle */ = {
+			isa = PBXGroup;
+			children = (
+				85DB75B72435CD800037E19E /* main.cpp */,
+			);
+			path = 01_triangle;
+			sourceTree = "<group>";
+		};
+		85DB75C52435E4520037E19E /* 02_rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				85DB75D12435E4A50037E19E /* main.cpp */,
+			);
+			path = 02_rectangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +159,40 @@
 			name = LearnOpenGL;
 			productName = LearnOpenGL;
 			productReference = 8571C0B62434827600A70221 /* LearnOpenGL */;
+			productType = "com.apple.product-type.tool";
+		};
+		85DB75B92435CE370037E19E /* 01Triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85DB75C12435CE370037E19E /* Build configuration list for PBXNativeTarget "01Triangle" */;
+			buildPhases = (
+				85DB75BA2435CE370037E19E /* Sources */,
+				85DB75BE2435CE370037E19E /* Frameworks */,
+				85DB75C02435CE370037E19E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01Triangle;
+			productName = LearnOpenGL;
+			productReference = 85DB75C42435CE370037E19E /* 01Triangle */;
+			productType = "com.apple.product-type.tool";
+		};
+		85DB75C62435E4810037E19E /* 02Rectangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85DB75CD2435E4810037E19E /* Build configuration list for PBXNativeTarget "02Rectangle" */;
+			buildPhases = (
+				85DB75C72435E4810037E19E /* Sources */,
+				85DB75CA2435E4810037E19E /* Frameworks */,
+				85DB75CC2435E4810037E19E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 02Rectangle;
+			productName = LearnOpenGL;
+			productReference = 85DB75D02435E4810037E19E /* 02Rectangle */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -125,6 +223,8 @@
 			projectRoot = "";
 			targets = (
 				8571C0B52434827600A70221 /* LearnOpenGL */,
+				85DB75B92435CE370037E19E /* 01Triangle */,
+				85DB75C62435E4810037E19E /* 02Rectangle */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +236,24 @@
 			files = (
 				8571C0BA2434827600A70221 /* main.cpp in Sources */,
 				85DB75B22435C5A80037E19E /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85DB75BA2435CE370037E19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DB75BC2435CE370037E19E /* glad.c in Sources */,
+				85DB75BD2435CE370037E19E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85DB75C72435E4810037E19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DB75D22435E4A50037E19E /* main.cpp in Sources */,
+				85DB75C82435E4810037E19E /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +399,66 @@
 			};
 			name = Release;
 		};
+		85DB75C22435CE370037E19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85DB75C32435CE370037E19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85DB75CE2435E4810037E19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85DB75CF2435E4810037E19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +476,24 @@
 			buildConfigurations = (
 				8571C0BE2434827600A70221 /* Debug */,
 				8571C0BF2434827600A70221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85DB75C12435CE370037E19E /* Build configuration list for PBXNativeTarget "01Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85DB75C22435CE370037E19E /* Debug */,
+				85DB75C32435CE370037E19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85DB75CD2435E4810037E19E /* Build configuration list for PBXNativeTarget "02Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85DB75CE2435E4810037E19E /* Debug */,
+				85DB75CF2435E4810037E19E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
