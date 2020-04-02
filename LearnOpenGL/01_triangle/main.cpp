@@ -72,7 +72,7 @@ int main()
     // build and compile our shader program
     // ------------------------------------
     // vertex shader
-    int vertexShader = glad_glCreateShader(GL_VERTEX_SHADER);
+    int vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, nullptr);
     glCompileShader(vertexShader);
     checkShader(vertexShader);
