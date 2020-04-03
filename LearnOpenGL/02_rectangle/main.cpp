@@ -11,27 +11,12 @@
 
 #include <iostream>
 
-#include "utils.hpp"
+#include "Utils.h"
+#include "Shader.h"
 
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-
-// shader source
-const char *vertexShaderSource =
-    "#version 330 core\n"
-    "layout (location = 0) in vec3 aPos;\n"
-    "void main()\n"
-    "{\n"
-    "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-    "}\0";
-const char *fragmentShaderSource =
-    "#version 330 core\n"
-    "out vec4 FragColor;\n"
-    "void main()\n"
-    "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-    "}\n\0";
 
 int main()
 {
@@ -41,11 +26,11 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
+    
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
 #endif
-
+    
     // glfw window creation
     // --------------------
     GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Rectangle", nullptr, nullptr);
@@ -57,7 +42,7 @@ int main()
     }
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
+    
     // glad: load all OpenGL function pointers
     // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -68,29 +53,8 @@ int main()
     
     // build and compile our shader program
     // ------------------------------------
-    // vertex shader
-    int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, nullptr);
-    glCompileShader(vertexShader);
-    checkShader(vertexShader);
+    Shader ourShader("shader.vs", "shader.fs");
     
-    // fragment shader
-    int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, nullptr);
-    glCompileShader(fragmentShader);
-    checkShader(fragmentShader);
-    
-    // link shaders
-    int shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    checkProgram(shaderProgram);
-    
-    // clear shader
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
-
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     // create a VAO
@@ -100,8 +64,8 @@ int main()
     
     // create a VBO, and copy vertices data to it.
     float vertices[] = {
-         0.5f,  0.5f, 0.0f,  // top right
-         0.5f, -0.5f, 0.0f,  // bottom right
+        0.5f,  0.5f, 0.0f,  // top right
+        0.5f, -0.5f, 0.0f,  // bottom right
         -0.5f, -0.5f, 0.0f,  // bottom left
         -0.5f,  0.5f, 0.0f   // top left
     };
@@ -125,7 +89,7 @@ int main()
     // reset state
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
-
+    
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -133,19 +97,19 @@ int main()
         // input
         // -----
         processInput(window);
-
+        
         // render
         // ------
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
         // draw our first rectangle
-        glUseProgram(shaderProgram);
+        ourShader.use();
         // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
         glBindVertexArray(VAO);
         //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
+        
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
         glfwSwapBuffers(window);
@@ -157,7 +121,7 @@ int main()
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
-
+    
     // glfw: terminate, clearing all previously allocated GLFW resources.
     // ------------------------------------------------------------------
     glfwTerminate();

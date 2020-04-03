@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8571C0BA2434827600A70221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8571C0B92434827600A70221 /* main.cpp */; };
+		858DC1012437147D0019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC0FF2437147D0019A4DE /* shader.vs */; };
+		858DC1022437147D0019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC1002437147D0019A4DE /* shader.fs */; };
+		858DC105243714B30019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC103243714B30019A4DE /* shader.vs */; };
+		858DC106243714B30019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC104243714B30019A4DE /* shader.fs */; };
+		858DC109243715010019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC107243715010019A4DE /* shader.vs */; };
+		858DC10A243715010019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC108243715010019A4DE /* shader.fs */; };
+		858DC10D24371B890019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC10B24371B890019A4DE /* shader.vs */; };
+		858DC10E24371B890019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC10C24371B890019A4DE /* shader.fs */; };
 		85DB75B22435C5A80037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
 		85DB75B52435C5F50037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
 		85DB75BC2435CE370037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
@@ -22,10 +30,6 @@
 		85DB75E42435F7180037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
 		85DB75E62435F7180037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
 		85DB75EE2435F7A50037E19E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75ED2435F7A50037E19E /* main.cpp */; };
-		85DB75F82435F9F60037E19E /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75F62435F9F60037E19E /* utils.cpp */; };
-		85DB75F92435F9F60037E19E /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75F62435F9F60037E19E /* utils.cpp */; };
-		85DB75FA2435F9F60037E19E /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75F62435F9F60037E19E /* utils.cpp */; };
-		85DB75FB2435F9F60037E19E /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75F62435F9F60037E19E /* utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,45 +44,61 @@
 		};
 		85DB75C02435CE370037E19E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				858DC1012437147D0019A4DE /* shader.vs in CopyFiles */,
+				858DC1022437147D0019A4DE /* shader.fs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		85DB75CC2435E4810037E19E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				858DC105243714B30019A4DE /* shader.vs in CopyFiles */,
+				858DC106243714B30019A4DE /* shader.fs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		85DB75DA2435F3A10037E19E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				858DC109243715010019A4DE /* shader.vs in CopyFiles */,
+				858DC10A243715010019A4DE /* shader.fs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		85DB75E72435F7180037E19E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				858DC10D24371B890019A4DE /* shader.vs in CopyFiles */,
+				858DC10E24371B890019A4DE /* shader.fs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8571C0B62434827600A70221 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		8571C0B92434827600A70221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		858DC0FF2437147D0019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		858DC1002437147D0019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		858DC103243714B30019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		858DC104243714B30019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		858DC107243715010019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		858DC108243715010019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		858DC10B24371B890019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		858DC10C24371B890019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		85DB75B12435C5A80037E19E /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		85DB75B72435CD800037E19E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -89,8 +109,8 @@
 		85DB75DF2435F3CC0037E19E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		85DB75EB2435F7180037E19E /* 04Layout */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 04Layout; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DB75ED2435F7A50037E19E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		85DB75F62435F9F60037E19E /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
-		85DB75F72435F9F60037E19E /* utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
+		85DB75F72435F9F60037E19E /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		85DB75FD2436E8930037E19E /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +187,8 @@
 				85DB75B62435CD460037E19E /* 01_triangle */,
 				85DB75B12435C5A80037E19E /* glad.c */,
 				8571C0B92434827600A70221 /* main.cpp */,
-				85DB75F62435F9F60037E19E /* utils.cpp */,
-				85DB75F72435F9F60037E19E /* utils.hpp */,
+				85DB75F72435F9F60037E19E /* Utils.h */,
+				85DB75FD2436E8930037E19E /* Shader.h */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -184,6 +204,8 @@
 		85DB75B62435CD460037E19E /* 01_triangle */ = {
 			isa = PBXGroup;
 			children = (
+				858DC1002437147D0019A4DE /* shader.fs */,
+				858DC0FF2437147D0019A4DE /* shader.vs */,
 				85DB75B72435CD800037E19E /* main.cpp */,
 			);
 			path = 01_triangle;
@@ -192,6 +214,8 @@
 		85DB75C52435E4520037E19E /* 02_rectangle */ = {
 			isa = PBXGroup;
 			children = (
+				858DC104243714B30019A4DE /* shader.fs */,
+				858DC103243714B30019A4DE /* shader.vs */,
 				85DB75D12435E4A50037E19E /* main.cpp */,
 			);
 			path = 02_rectangle;
@@ -200,6 +224,8 @@
 		85DB75D32435F38D0037E19E /* 03_uniform */ = {
 			isa = PBXGroup;
 			children = (
+				858DC108243715010019A4DE /* shader.fs */,
+				858DC107243715010019A4DE /* shader.vs */,
 				85DB75DF2435F3CC0037E19E /* main.cpp */,
 			);
 			path = 03_uniform;
@@ -208,6 +234,8 @@
 		85DB75EC2435F78D0037E19E /* 04_layout */ = {
 			isa = PBXGroup;
 			children = (
+				858DC10C24371B890019A4DE /* shader.fs */,
+				858DC10B24371B890019A4DE /* shader.vs */,
 				85DB75ED2435F7A50037E19E /* main.cpp */,
 			);
 			path = 04_layout;
@@ -351,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DB75F82435F9F60037E19E /* utils.cpp in Sources */,
 				85DB75BC2435CE370037E19E /* glad.c in Sources */,
 				85DB75BD2435CE370037E19E /* main.cpp in Sources */,
 			);
@@ -361,7 +388,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DB75F92435F9F60037E19E /* utils.cpp in Sources */,
 				85DB75D22435E4A50037E19E /* main.cpp in Sources */,
 				85DB75C82435E4810037E19E /* glad.c in Sources */,
 			);
@@ -371,7 +397,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DB75FA2435F9F60037E19E /* utils.cpp in Sources */,
 				85DB75E02435F3CC0037E19E /* main.cpp in Sources */,
 				85DB75D72435F3A10037E19E /* glad.c in Sources */,
 			);
@@ -381,7 +406,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DB75FB2435F9F60037E19E /* utils.cpp in Sources */,
 				85DB75EE2435F7A50037E19E /* main.cpp in Sources */,
 				85DB75E42435F7180037E19E /* glad.c in Sources */,
 			);
