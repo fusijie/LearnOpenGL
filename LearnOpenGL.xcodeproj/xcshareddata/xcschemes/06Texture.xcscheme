@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "858DC110243725950019A4DE"
-               BuildableName = "05updown"
-               BlueprintName = "05updown"
+               BlueprintIdentifier = "858DC12624372EFC0019A4DE"
+               BuildableName = "06Texture"
+               BlueprintName = "06Texture"
                ReferencedContainer = "container:LearnOpenGL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC110243725950019A4DE"
-            BuildableName = "05updown"
-            BlueprintName = "05updown"
+            BlueprintIdentifier = "858DC12624372EFC0019A4DE"
+            BuildableName = "06Texture"
+            BlueprintName = "06Texture"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC110243725950019A4DE"
-            BuildableName = "05updown"
-            BlueprintName = "05updown"
+            BlueprintIdentifier = "858DC12624372EFC0019A4DE"
+            BuildableName = "06Texture"
+            BlueprintName = "06Texture"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

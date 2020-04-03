@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "858DC14424373A780019A4DE"
-               BuildableName = "07mixTexture"
-               BlueprintName = "07mixTexture"
+               BlueprintIdentifier = "858DC179243746F70019A4DE"
+               BuildableName = "09MirrorTexture"
+               BlueprintName = "09MirrorTexture"
                ReferencedContainer = "container:LearnOpenGL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC14424373A780019A4DE"
-            BuildableName = "07mixTexture"
-            BlueprintName = "07mixTexture"
+            BlueprintIdentifier = "858DC179243746F70019A4DE"
+            BuildableName = "09MirrorTexture"
+            BlueprintName = "09MirrorTexture"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC14424373A780019A4DE"
-            BuildableName = "07mixTexture"
-            BlueprintName = "07mixTexture"
+            BlueprintIdentifier = "858DC179243746F70019A4DE"
+            BuildableName = "09MirrorTexture"
+            BlueprintName = "09MirrorTexture"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

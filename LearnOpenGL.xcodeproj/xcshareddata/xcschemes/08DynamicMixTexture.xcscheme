@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "858DC12624372EFC0019A4DE"
-               BuildableName = "06texture"
-               BlueprintName = "06texture"
+               BlueprintIdentifier = "858DC162243744170019A4DE"
+               BuildableName = "08DynamicMixTexture"
+               BlueprintName = "08DynamicMixTexture"
                ReferencedContainer = "container:LearnOpenGL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC12624372EFC0019A4DE"
-            BuildableName = "06texture"
-            BlueprintName = "06texture"
+            BlueprintIdentifier = "858DC162243744170019A4DE"
+            BuildableName = "08DynamicMixTexture"
+            BlueprintName = "08DynamicMixTexture"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC12624372EFC0019A4DE"
-            BuildableName = "06texture"
-            BlueprintName = "06texture"
+            BlueprintIdentifier = "858DC162243744170019A4DE"
+            BuildableName = "08DynamicMixTexture"
+            BlueprintName = "08DynamicMixTexture"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

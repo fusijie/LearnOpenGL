@@ -34,7 +34,6 @@
 		858DC15924373B310019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15724373B310019A4DE /* shader.vs */; };
 		858DC15A24373B310019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15824373B310019A4DE /* shader.fs */; };
 		858DC15B24373B390019A4DE /* container.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15524373AD70019A4DE /* container.jpg */; };
-		858DC15D24373B540019A4DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC15C24373B540019A4DE /* main.cpp */; };
 		858DC15F24373CBC0019A4DE /* awesomeface.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15E24373CBC0019A4DE /* awesomeface.png */; };
 		858DC164243744170019A4DE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC13E243730D30019A4DE /* stb_image.cpp */; };
 		858DC165243744170019A4DE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
@@ -44,6 +43,14 @@
 		858DC1732437445E0019A4DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC1722437445E0019A4DE /* main.cpp */; };
 		858DC176243744740019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC174243744740019A4DE /* shader.vs */; };
 		858DC177243744740019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC175243744740019A4DE /* shader.fs */; };
+		858DC17B243746F70019A4DE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC13E243730D30019A4DE /* stb_image.cpp */; };
+		858DC17C243746F70019A4DE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
+		858DC17F243746F70019A4DE /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
+		858DC18C24374BAB0019A4DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC18B24374BAB0019A4DE /* main.cpp */; };
+		858DC18E24374BBE0019A4DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC18D24374BBE0019A4DE /* main.cpp */; };
+		858DC19124374BCF0019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC18F24374BCF0019A4DE /* shader.fs */; };
+		858DC19224374BCF0019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC19024374BCF0019A4DE /* shader.vs */; };
+		858DC19424374CD50019A4DE /* awesomeface.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15E24373CBC0019A4DE /* awesomeface.png */; };
 		85DB75B22435C5A80037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
 		85DB75B52435C5F50037E19E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
 		85DB75BC2435CE370037E19E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DB75B12435C5A80037E19E /* glad.c */; };
@@ -119,6 +126,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		858DC180243746F70019A4DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				858DC19424374CD50019A4DE /* awesomeface.png in CopyFiles */,
+				858DC19124374BCF0019A4DE /* shader.fs in CopyFiles */,
+				858DC19224374BCF0019A4DE /* shader.vs in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85DB75C02435CE370037E19E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -176,26 +195,30 @@
 		858DC108243715010019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		858DC10B24371B890019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		858DC10C24371B890019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
-		858DC11C243725950019A4DE /* 05updown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 05updown; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DC11C243725950019A4DE /* 05Updown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 05Updown; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DC11D243725C10019A4DE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC11F2437261D0019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		858DC1202437261E0019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		858DC12424372ED20019A4DE /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
-		858DC13224372EFC0019A4DE /* 06texture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 06texture; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DC13224372EFC0019A4DE /* 06Texture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 06Texture; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DC13424372F2E0019A4DE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC13624372F560019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		858DC13724372F560019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		858DC13E243730D30019A4DE /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
-		858DC15224373A780019A4DE /* 07mixTexture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 07mixTexture; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DC15224373A780019A4DE /* 07MixTexture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 07MixTexture; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DC15524373AD70019A4DE /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		858DC15724373B310019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		858DC15824373B310019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
-		858DC15C24373B540019A4DE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC15E24373CBC0019A4DE /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
-		858DC171243744170019A4DE /* 08dynamicMixTexture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08dynamicMixTexture; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DC171243744170019A4DE /* 08DynamicMixTexture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08DynamicMixTexture; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DC1722437445E0019A4DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC174243744740019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		858DC175243744740019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		858DC188243746F70019A4DE /* 09MirrorTexture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 09MirrorTexture; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DC18B24374BAB0019A4DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		858DC18D24374BBE0019A4DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		858DC18F24374BCF0019A4DE /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		858DC19024374BCF0019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		85DB75B12435C5A80037E19E /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		85DB75B72435CD800037E19E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -251,6 +274,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		858DC17E243746F70019A4DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858DC17F243746F70019A4DE /* libglfw.3.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85DB75BE2435CE370037E19E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,10 +334,11 @@
 				85DB75D02435E4810037E19E /* 02Rectangle */,
 				85DB75DE2435F3A10037E19E /* 03Uniform */,
 				85DB75EB2435F7180037E19E /* 04Layout */,
-				858DC11C243725950019A4DE /* 05updown */,
-				858DC13224372EFC0019A4DE /* 06texture */,
-				858DC15224373A780019A4DE /* 07mixTexture */,
-				858DC171243744170019A4DE /* 08dynamicMixTexture */,
+				858DC11C243725950019A4DE /* 05Updown */,
+				858DC13224372EFC0019A4DE /* 06Texture */,
+				858DC15224373A780019A4DE /* 07MixTexture */,
+				858DC171243744170019A4DE /* 08DynamicMixTexture */,
+				858DC188243746F70019A4DE /* 09MirrorTexture */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +346,7 @@
 		8571C0B82434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				858DC178243746E10019A4DE /* 09_mirrorTexture */,
 				858DC1612437438F0019A4DE /* 08_dynamicMixTexture */,
 				858DC14324373A5C0019A4DE /* 07_mixTexture */,
 				858DC12524372EE00019A4DE /* 06_texture */,
@@ -364,9 +397,9 @@
 		858DC14324373A5C0019A4DE /* 07_mixTexture */ = {
 			isa = PBXGroup;
 			children = (
+				858DC18B24374BAB0019A4DE /* main.cpp */,
 				858DC15824373B310019A4DE /* shader.fs */,
 				858DC15724373B310019A4DE /* shader.vs */,
-				858DC15C24373B540019A4DE /* main.cpp */,
 			);
 			path = 07_mixTexture;
 			sourceTree = "<group>";
@@ -396,6 +429,16 @@
 				858DC1722437445E0019A4DE /* main.cpp */,
 			);
 			path = 08_dynamicMixTexture;
+			sourceTree = "<group>";
+		};
+		858DC178243746E10019A4DE /* 09_mirrorTexture */ = {
+			isa = PBXGroup;
+			children = (
+				858DC18F24374BCF0019A4DE /* shader.fs */,
+				858DC19024374BCF0019A4DE /* shader.vs */,
+				858DC18D24374BBE0019A4DE /* main.cpp */,
+			);
+			path = 09_mirrorTexture;
 			sourceTree = "<group>";
 		};
 		85DB75B32435C5F50037E19E /* Frameworks */ = {
@@ -466,9 +509,9 @@
 			productReference = 8571C0B62434827600A70221 /* LearnOpenGL */;
 			productType = "com.apple.product-type.tool";
 		};
-		858DC110243725950019A4DE /* 05updown */ = {
+		858DC110243725950019A4DE /* 05Updown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DC119243725950019A4DE /* Build configuration list for PBXNativeTarget "05updown" */;
+			buildConfigurationList = 858DC119243725950019A4DE /* Build configuration list for PBXNativeTarget "05Updown" */;
 			buildPhases = (
 				858DC111243725950019A4DE /* Sources */,
 				858DC114243725950019A4DE /* Frameworks */,
@@ -478,14 +521,14 @@
 			);
 			dependencies = (
 			);
-			name = 05updown;
+			name = 05Updown;
 			productName = LearnOpenGL;
-			productReference = 858DC11C243725950019A4DE /* 05updown */;
+			productReference = 858DC11C243725950019A4DE /* 05Updown */;
 			productType = "com.apple.product-type.tool";
 		};
-		858DC12624372EFC0019A4DE /* 06texture */ = {
+		858DC12624372EFC0019A4DE /* 06Texture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DC12F24372EFC0019A4DE /* Build configuration list for PBXNativeTarget "06texture" */;
+			buildConfigurationList = 858DC12F24372EFC0019A4DE /* Build configuration list for PBXNativeTarget "06Texture" */;
 			buildPhases = (
 				858DC12724372EFC0019A4DE /* Sources */,
 				858DC12A24372EFC0019A4DE /* Frameworks */,
@@ -495,14 +538,14 @@
 			);
 			dependencies = (
 			);
-			name = 06texture;
+			name = 06Texture;
 			productName = LearnOpenGL;
-			productReference = 858DC13224372EFC0019A4DE /* 06texture */;
+			productReference = 858DC13224372EFC0019A4DE /* 06Texture */;
 			productType = "com.apple.product-type.tool";
 		};
-		858DC14424373A780019A4DE /* 07mixTexture */ = {
+		858DC14424373A780019A4DE /* 07MixTexture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DC14F24373A780019A4DE /* Build configuration list for PBXNativeTarget "07mixTexture" */;
+			buildConfigurationList = 858DC14F24373A780019A4DE /* Build configuration list for PBXNativeTarget "07MixTexture" */;
 			buildPhases = (
 				858DC14524373A780019A4DE /* Sources */,
 				858DC14924373A780019A4DE /* Frameworks */,
@@ -512,14 +555,14 @@
 			);
 			dependencies = (
 			);
-			name = 07mixTexture;
+			name = 07MixTexture;
 			productName = LearnOpenGL;
-			productReference = 858DC15224373A780019A4DE /* 07mixTexture */;
+			productReference = 858DC15224373A780019A4DE /* 07MixTexture */;
 			productType = "com.apple.product-type.tool";
 		};
-		858DC162243744170019A4DE /* 08dynamicMixTexture */ = {
+		858DC162243744170019A4DE /* 08DynamicMixTexture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DC16E243744170019A4DE /* Build configuration list for PBXNativeTarget "08dynamicMixTexture" */;
+			buildConfigurationList = 858DC16E243744170019A4DE /* Build configuration list for PBXNativeTarget "08DynamicMixTexture" */;
 			buildPhases = (
 				858DC163243744170019A4DE /* Sources */,
 				858DC167243744170019A4DE /* Frameworks */,
@@ -529,9 +572,26 @@
 			);
 			dependencies = (
 			);
-			name = 08dynamicMixTexture;
+			name = 08DynamicMixTexture;
 			productName = LearnOpenGL;
-			productReference = 858DC171243744170019A4DE /* 08dynamicMixTexture */;
+			productReference = 858DC171243744170019A4DE /* 08DynamicMixTexture */;
+			productType = "com.apple.product-type.tool";
+		};
+		858DC179243746F70019A4DE /* 09MirrorTexture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858DC185243746F70019A4DE /* Build configuration list for PBXNativeTarget "09MirrorTexture" */;
+			buildPhases = (
+				858DC17A243746F70019A4DE /* Sources */,
+				858DC17E243746F70019A4DE /* Frameworks */,
+				858DC180243746F70019A4DE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 09MirrorTexture;
+			productName = LearnOpenGL;
+			productReference = 858DC188243746F70019A4DE /* 09MirrorTexture */;
 			productType = "com.apple.product-type.tool";
 		};
 		85DB75B92435CE370037E19E /* 01Triangle */ = {
@@ -634,10 +694,11 @@
 				85DB75C62435E4810037E19E /* 02Rectangle */,
 				85DB75D42435F3A10037E19E /* 03Uniform */,
 				85DB75E12435F7180037E19E /* 04Layout */,
-				858DC110243725950019A4DE /* 05updown */,
-				858DC12624372EFC0019A4DE /* 06texture */,
-				858DC14424373A780019A4DE /* 07mixTexture */,
-				858DC162243744170019A4DE /* 08dynamicMixTexture */,
+				858DC110243725950019A4DE /* 05Updown */,
+				858DC12624372EFC0019A4DE /* 06Texture */,
+				858DC14424373A780019A4DE /* 07MixTexture */,
+				858DC162243744170019A4DE /* 08DynamicMixTexture */,
+				858DC179243746F70019A4DE /* 09MirrorTexture */,
 			);
 		};
 /* End PBXProject section */
@@ -677,7 +738,7 @@
 			files = (
 				858DC14624373A780019A4DE /* stb_image.cpp in Sources */,
 				858DC14724373A780019A4DE /* glad.c in Sources */,
-				858DC15D24373B540019A4DE /* main.cpp in Sources */,
+				858DC18C24374BAB0019A4DE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +749,16 @@
 				858DC164243744170019A4DE /* stb_image.cpp in Sources */,
 				858DC165243744170019A4DE /* glad.c in Sources */,
 				858DC1732437445E0019A4DE /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		858DC17A243746F70019A4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858DC17B243746F70019A4DE /* stb_image.cpp in Sources */,
+				858DC17C243746F70019A4DE /* glad.c in Sources */,
+				858DC18E24374BBE0019A4DE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,6 +1060,36 @@
 			};
 			name = Release;
 		};
+		858DC186243746F70019A4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		858DC187243746F70019A4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		85DB75C22435CE370037E19E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1130,7 +1231,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DC119243725950019A4DE /* Build configuration list for PBXNativeTarget "05updown" */ = {
+		858DC119243725950019A4DE /* Build configuration list for PBXNativeTarget "05Updown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DC11A243725950019A4DE /* Debug */,
@@ -1139,7 +1240,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DC12F24372EFC0019A4DE /* Build configuration list for PBXNativeTarget "06texture" */ = {
+		858DC12F24372EFC0019A4DE /* Build configuration list for PBXNativeTarget "06Texture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DC13024372EFC0019A4DE /* Debug */,
@@ -1148,7 +1249,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DC14F24373A780019A4DE /* Build configuration list for PBXNativeTarget "07mixTexture" */ = {
+		858DC14F24373A780019A4DE /* Build configuration list for PBXNativeTarget "07MixTexture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DC15024373A780019A4DE /* Debug */,
@@ -1157,11 +1258,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DC16E243744170019A4DE /* Build configuration list for PBXNativeTarget "08dynamicMixTexture" */ = {
+		858DC16E243744170019A4DE /* Build configuration list for PBXNativeTarget "08DynamicMixTexture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DC16F243744170019A4DE /* Debug */,
 				858DC170243744170019A4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858DC185243746F70019A4DE /* Build configuration list for PBXNativeTarget "09MirrorTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858DC186243746F70019A4DE /* Debug */,
+				858DC187243746F70019A4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
