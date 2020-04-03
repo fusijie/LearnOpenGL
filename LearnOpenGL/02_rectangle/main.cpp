@@ -47,7 +47,7 @@ int main()
     glEnableVertexAttribArray(0);
     
     // create a EBO, and copy indices data to it.
-    unsigned int indices[] = {  // note that we start from 0!
+    unsigned int indices[] = {
         0, 1, 3,  // first Triangle
         1, 2, 3   // second Triangle
     };

@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  06texture
+//  07mixTexture
 //
 //  Created by 傅思杰 on 2020/4/3.
 //  Copyright © 2020 傅思杰. All rights reserved.
@@ -10,6 +10,7 @@
 #include <GLFW/glfw3.h>
 
 #include <iostream>
+#include <cmath>
 
 #include "stb_image.h"
 
@@ -37,8 +38,8 @@ int main()
     // create a VBO, and copy vertices data to it.
     float vertices[] = {
         // positions          // colors           // texture coords
-         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
-         0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // bottom right
+        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
+        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // bottom right
         -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
         -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // top left
     };
@@ -71,29 +72,41 @@ int main()
     glBindVertexArray(0);
     
     // load and create a texture
-    unsigned int texture;
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    // set texture wrapping parameters
+    unsigned int texture1, texture2;
+    int width, height, nrChannels;
+    unsigned char *data;
+    // tell stb_image.h to flip loaded texture's on the y-axis.
+    stbi_set_flip_vertically_on_load(true);
+    
+    // texture 1
+    glGenTextures(1, &texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    // set texture filtering parameters
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    // load image, create texture and generate mipmaps
-    int width, height, nrChannels;
-    unsigned char *data = stbi_load("container.jpg", &width, &height, &nrChannels, 0);
-    if (data)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
-    }
+    data = stbi_load("container.jpg", &width, &height, &nrChannels, 0);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free(data);
-
+    
+    // texture 2
+    glGenTextures(1, &texture2);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    data = stbi_load("awesomeface.png", &width, &height, &nrChannels, 0);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+    glGenerateMipmap(GL_TEXTURE_2D);
+    stbi_image_free(data);
+    
+    // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
+    ourShader.use();
+    ourShader.setInt("texture1", 0);
+    ourShader.setInt("texture2", 1);
+    
     
     // render loop
     while (!glfwWindowShouldClose(window))
@@ -105,11 +118,18 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        // bind Texture
-        glBindTexture(GL_TEXTURE_2D, texture);
+        // bind textures on corresponding texture units
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture1);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, texture2);
         
         // draw our first rectangle
         ourShader.use();
+        
+        //update uniform
+        float timeValue = glfwGetTime();
+        ourShader.setFloat("time", timeValue);
         // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
         glBindVertexArray(VAO);
         //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
