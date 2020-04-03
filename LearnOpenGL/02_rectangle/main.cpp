@@ -76,7 +76,7 @@ int main()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     
-    // create EBO, and copy indices data to it.
+    // create a EBO, and copy indices data to it.
     unsigned int indices[] = {  // note that we start from 0!
         0, 1, 3,  // first Triangle
         1, 2, 3   // second Triangle
@@ -121,6 +121,8 @@ int main()
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
+    
+    ourShader.clear();
     
     // glfw: terminate, clearing all previously allocated GLFW resources.
     // ------------------------------------------------------------------
