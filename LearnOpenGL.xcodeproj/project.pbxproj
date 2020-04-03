@@ -215,8 +215,8 @@
 				85DB75D32435F38D0037E19E /* 03_uniform */,
 				85DB75C52435E4520037E19E /* 02_rectangle */,
 				85DB75B62435CD460037E19E /* 01_triangle */,
+				858DC123243727620019A4DE /* 00_context */,
 				85DB75B12435C5A80037E19E /* glad.c */,
-				8571C0B92434827600A70221 /* main.cpp */,
 				85DB75F72435F9F60037E19E /* Utils.h */,
 				85DB75FD2436E8930037E19E /* Shader.h */,
 			);
@@ -231,6 +231,14 @@
 				858DC11D243725C10019A4DE /* main.cpp */,
 			);
 			path = 05_updown;
+			sourceTree = "<group>";
+		};
+		858DC123243727620019A4DE /* 00_context */ = {
+			isa = PBXGroup;
+			children = (
+				8571C0B92434827600A70221 /* main.cpp */,
+			);
+			path = 00_context;
 			sourceTree = "<group>";
 		};
 		85DB75B32435C5F50037E19E /* Frameworks */ = {
