@@ -104,9 +104,6 @@ int main()
         // draw our first rectangle
         ourShader.use();
         
-        //update uniform
-        float timeValue = glfwGetTime();
-        ourShader.setFloat("time", timeValue);
         // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
         glBindVertexArray(VAO);
         //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
