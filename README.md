@@ -10,4 +10,4 @@
 
 #### Setup Dev Env.
 
-- [OpenGL: GLFW 和 GLAD 配置 XCode](https://www.jianshu.com/p/7ef5aba84163)
+- brew install glfw
