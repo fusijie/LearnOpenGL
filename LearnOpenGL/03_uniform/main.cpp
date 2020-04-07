@@ -6,11 +6,11 @@
 //  Copyright © 2020 傅思杰. All rights reserved.
 //
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
 #include <iostream>
 #include <cmath>
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 #include "Utils.h"
 #include "Shader.h"

@@ -6,13 +6,13 @@
 //  Copyright © 2020 傅思杰. All rights reserved.
 //
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
 #include <iostream>
 #include <cmath>
 
-#include "stb_image.h"
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
+#include <stb/stb_image.h>
 
 #include "Utils.h"
 #include "Shader.h"
@@ -20,7 +20,7 @@
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("Texture");
+    GLFWwindow* window = initGLFW("DynamicMixTexture");
     if (!window)
     {
         return -1;

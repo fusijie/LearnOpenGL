@@ -6,12 +6,12 @@
 //  Copyright © 2020 傅思杰. All rights reserved.
 //
 
+#include <iostream>
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include <iostream>
-
-#include "stb_image.h"
+#include <stb/stb_image.h>
 
 #include "Utils.h"
 #include "Shader.h"
