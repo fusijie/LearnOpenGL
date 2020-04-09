@@ -41,7 +41,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("Light");
+    GLFWwindow* window = initGLFW("Color");
     if (!window)
     {
         return -1;
@@ -145,7 +145,7 @@ int main()
         myProcessInput(window);
         
         // render
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         // be sure to activate shader when setting uniforms/drawing objects

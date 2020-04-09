@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "858DC69F243EC9E20019A4DE"
-               BuildableName = "19Light"
-               BlueprintName = "19Light"
+               BlueprintIdentifier = "8555701F243F1709000533DE"
+               BuildableName = "20Light"
+               BlueprintName = "20Light"
                ReferencedContainer = "container:LearnOpenGL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC69F243EC9E20019A4DE"
-            BuildableName = "19Light"
-            BlueprintName = "19Light"
+            BlueprintIdentifier = "8555701F243F1709000533DE"
+            BuildableName = "20Light"
+            BlueprintName = "20Light"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858DC69F243EC9E20019A4DE"
-            BuildableName = "19Light"
-            BlueprintName = "19Light"
+            BlueprintIdentifier = "8555701F243F1709000533DE"
+            BuildableName = "20Light"
+            BlueprintName = "20Light"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
