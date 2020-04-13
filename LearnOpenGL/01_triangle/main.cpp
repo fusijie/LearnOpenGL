@@ -1,6 +1,5 @@
 //
 //  main.cpp
-//  LearnOpenGL
 //
 //  Created by 傅思杰 on 2020/4/2.
 //  Copyright © 2020 傅思杰. All rights reserved.
