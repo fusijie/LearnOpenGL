@@ -98,6 +98,14 @@
 		8555714C244071F4000533DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85557148244071EC000533DE /* shader.fs */; };
 		8555714F244074AE000533DE /* lamp.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555714D244074A8000533DE /* lamp.fs */; };
 		85557150244074AE000533DE /* lamp.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555714E244074A8000533DE /* lamp.vs */; };
+		8555716C244446D7000533DE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC502243C6D6E0019A4DE /* stb_image.cpp */; };
+		8555716E244446D7000533DE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 858DC3EC243C6CF50019A4DE /* glad.c */; };
+		85557170244446D7000533DE /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */; };
+		8555718224444701000533DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8555718124444701000533DE /* main.cpp */; };
+		85557199244448ED000533DE /* libassimp.3.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85557198244448ED000533DE /* libassimp.3.1.1.dylib */; };
+		855571B024444D6B000533DE /* nanosuit in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855571AF24444D62000533DE /* nanosuit */; };
+		855571B124444DF3000533DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555717D24444701000533DE /* shader.vs */; };
+		855571B224444DF3000533DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555718024444701000533DE /* shader.fs */; };
 		8571C0BA2434827600A70221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8571C0B92434827600A70221 /* main.cpp */; };
 		858DC1012437147D0019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC0FF2437147D0019A4DE /* shader.vs */; };
 		858DC1022437147D0019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC1002437147D0019A4DE /* shader.fs */; };
@@ -372,6 +380,18 @@
 				8555714C244071F4000533DE /* shader.fs in CopyFiles */,
 				855571402440711C000533DE /* container2_specular.png in CopyFiles */,
 				855571412440711C000533DE /* container2.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85557171244446D7000533DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				855571B124444DF3000533DE /* shader.vs in CopyFiles */,
+				855571B224444DF3000533DE /* shader.fs in CopyFiles */,
+				855571B024444D6B000533DE /* nanosuit in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +702,13 @@
 		8555714D244074A8000533DE /* lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.fs; sourceTree = "<group>"; };
 		8555714E244074A8000533DE /* lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.vs; sourceTree = "<group>"; };
 		855571512444184D000533DE /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		8555715224444032000533DE /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		8555717B244446D7000533DE /* 30Model */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 30Model; sourceTree = BUILT_PRODUCTS_DIR; };
+		8555717D24444701000533DE /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		8555718024444701000533DE /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		8555718124444701000533DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		85557198244448ED000533DE /* libassimp.3.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.1.1.dylib; path = ../../../../usr/local/lib/libassimp.3.1.1.dylib; sourceTree = "<group>"; };
+		855571AF24444D62000533DE /* nanosuit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nanosuit; sourceTree = "<group>"; };
 		8571C0B62434827600A70221 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		8571C0B92434827600A70221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC0FF2437147D0019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
@@ -1112,6 +1139,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8555716F244446D7000533DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85557199244448ED000533DE /* libassimp.3.1.1.dylib in Frameworks */,
+				85557170244446D7000533DE /* libglfw.3.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8571C0B32434827600A70221 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1391,6 +1427,24 @@
 			path = 29_multiLight;
 			sourceTree = "<group>";
 		};
+		8555715324444094000533DE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				855571AF24444D62000533DE /* nanosuit */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8555717C24444701000533DE /* 30_model */ = {
+			isa = PBXGroup;
+			children = (
+				8555717D24444701000533DE /* shader.vs */,
+				8555718024444701000533DE /* shader.fs */,
+				8555718124444701000533DE /* main.cpp */,
+			);
+			path = 30_model;
+			sourceTree = "<group>";
+		};
 		8571C0AD2434827600A70221 = {
 			isa = PBXGroup;
 			children = (
@@ -1433,6 +1487,7 @@
 				8555710D24406783000533DE /* 27SpotLight */,
 				8555712A24406B80000533DE /* 28FlashLight */,
 				855571452440711C000533DE /* 29MultiLight */,
+				8555717B244446D7000533DE /* 30Model */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1440,6 +1495,7 @@
 		8571C0B82434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				8555717C24444701000533DE /* 30_model */,
 				85557146244071EC000533DE /* 29_multiLight */,
 				8555712B24406BB0000533DE /* 28_flashLight */,
 				8555710E244067B3000533DE /* 27_spotLight */,
@@ -1478,6 +1534,7 @@
 				85DB75FD2436E8930037E19E /* Shader.h */,
 				858DC687243DCC310019A4DE /* Camera.h */,
 				855571512444184D000533DE /* Mesh.h */,
+				8555715224444032000533DE /* Model.h */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -1523,6 +1580,7 @@
 		858DC15324373A9C0019A4DE /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				8555715324444094000533DE /* model */,
 				858DC15424373AA40019A4DE /* image */,
 			);
 			path = resource;
@@ -2012,6 +2070,7 @@
 		85DB75B32435C5F50037E19E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85557198244448ED000533DE /* libassimp.3.1.1.dylib */,
 				85DB75B42435C5F50037E19E /* libglfw.3.3.dylib */,
 			);
 			name = Frameworks;
@@ -2228,6 +2287,23 @@
 			name = 29MultiLight;
 			productName = LearnOpenGL;
 			productReference = 855571452440711C000533DE /* 29MultiLight */;
+			productType = "com.apple.product-type.tool";
+		};
+		8555716A244446D7000533DE /* 30Model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85557178244446D7000533DE /* Build configuration list for PBXNativeTarget "30Model" */;
+			buildPhases = (
+				8555716B244446D7000533DE /* Sources */,
+				8555716F244446D7000533DE /* Frameworks */,
+				85557171244446D7000533DE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 30Model;
+			productName = LearnOpenGL;
+			productReference = 8555717B244446D7000533DE /* 30Model */;
 			productType = "com.apple.product-type.tool";
 		};
 		8571C0B52434827600A70221 /* LearnOpenGL */ = {
@@ -2627,6 +2703,7 @@
 				855570FC24406783000533DE /* 27SpotLight */,
 				8555711924406B80000533DE /* 28FlashLight */,
 				855571362440711C000533DE /* 29MultiLight */,
+				8555716A244446D7000533DE /* 30Model */,
 			);
 		};
 /* End PBXProject section */
@@ -2729,6 +2806,16 @@
 				855571382440711C000533DE /* stb_image.cpp in Sources */,
 				8555714A244071EC000533DE /* main.cpp in Sources */,
 				8555713A2440711C000533DE /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8555716B244446D7000533DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8555716C244446D7000533DE /* stb_image.cpp in Sources */,
+				8555718224444701000533DE /* main.cpp in Sources */,
+				8555716E244446D7000533DE /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3169,6 +3256,30 @@
 			};
 			name = Release;
 		};
+		85557179244446D7000533DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8555717A244446D7000533DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8571C0BB2434827600A70221 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3225,6 +3336,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/bin,
+					/usr/local/lib,
 					/usr/local/Cellar/glfw/3.3/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
@@ -3285,6 +3397,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/bin,
+					/usr/local/lib,
 					/usr/local/Cellar/glfw/3.3/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
@@ -3863,6 +3976,15 @@
 			buildConfigurations = (
 				855571432440711C000533DE /* Debug */,
 				855571442440711C000533DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85557178244446D7000533DE /* Build configuration list for PBXNativeTarget "30Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85557179244446D7000533DE /* Debug */,
+				8555717A244446D7000533DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

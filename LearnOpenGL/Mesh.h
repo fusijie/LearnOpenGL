@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  Mesh.h
 //
 //  Created by 傅思杰 on 2020/4/13.
 //  Copyright © 2020 傅思杰. All rights reserved.
@@ -8,7 +8,7 @@
 #ifndef MESH_H
 #define MESH_H
 
-#include <glad/glad.h> // holds all OpenGL type declarations
+#include <glad/glad.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>

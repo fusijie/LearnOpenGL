@@ -37,7 +37,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("CombineLight");
+    GLFWwindow* window = initGLFW("MultiLight");
     if (!window)
     {
         return -1;
