@@ -7,9 +7,3 @@
 - GLFW: 3.3
 - GLAD: 0.1.33
 - Assimp: 3.1.1
-
-
-#### Setup Dev Env.
-
-- brew install glfw
-- [install assimp](http://blog.shenyuanluo.com/LearnOpenGLNote18.html)
