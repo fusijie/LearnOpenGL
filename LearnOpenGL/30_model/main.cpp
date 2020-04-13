@@ -8,16 +8,16 @@
 #include <iostream>
 
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "Utils.h"
-#include "Shader.h"
-#include "Camera.h"
-#include "Model.h"
+#include "common/Utils.h"
+#include "common/Shader.h"
+#include "common/Camera.h"
+#include "common/Model.h"
 
 // camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));

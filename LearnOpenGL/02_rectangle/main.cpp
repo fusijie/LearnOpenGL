@@ -8,10 +8,10 @@
 #include <iostream>
 
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
-#include "Utils.h"
-#include "Shader.h"
+#include "common/Utils.h"
+#include "common/Shader.h"
 
 int main()
 {

@@ -8,7 +8,7 @@
 #include <iostream>
 
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
 #include <stb/stb_image.h>
 
@@ -16,8 +16,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "Utils.h"
-#include "Shader.h"
+#include "common/Utils.h"
+#include "common/Shader.h"
 
 static bool isAnimate = true;
 
