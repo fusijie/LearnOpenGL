@@ -37,7 +37,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("DepthTest");
+    GLFWwindow* window = initGLFW("StencilTest");
     if (!window)
     {
         return -1;
@@ -51,10 +51,14 @@ int main()
     
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
-    //glDepthFunc(GL_ALWAYS);
+    glDepthFunc(GL_LESS);
+    glEnable(GL_STENCIL_TEST);
+    glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+    glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
     
     // build and compile our shader program
     Shader ourShader("shader.vs", "shader.fs");
+    Shader outlineShader("outline.vs", "outline.fs");
     
     // set up vertex data (and buffer(s)) and configure vertex attributes
     float cubeVertices[] = {
@@ -169,19 +173,36 @@ int main()
         
         // render
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
         
-        // be sure to activate shader when setting uniforms/drawing objects
+        // ourShader
         ourShader.use();
-        
-        // create transformations
         glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = camera.GetViewMatrix();
         glm::mat4 projection = glm::mat4(1.0f);
         projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH/SCR_HEIGHT, 0.1f, 100.0f);
         ourShader.setMatrix4fv("view", glm::value_ptr(view));
         ourShader.setMatrix4fv("projection", glm::value_ptr(projection));
+
+        //outline
+        outlineShader.use();
+        outlineShader.setMatrix4fv("view", glm::value_ptr(view));
+        outlineShader.setMatrix4fv("projection", glm::value_ptr(projection));
         
+        // draw floor as normal, but don't write the floor to the stencil buffer, we only care about the containers. We set its mask to 0x00 to not write to the stencil buffer.
+        ourShader.use();
+        glStencilMask(0x00);
+        //plane
+        glBindVertexArray(planeVAO);
+        glBindTexture(GL_TEXTURE_2D, planeTexture);
+        model = glm::mat4(1.0f);
+        ourShader.setMatrix4fv("model", glm::value_ptr(model));
+        glDrawArrays(GL_TRIANGLES, 0, 6);
+        glBindVertexArray(0);
+        
+        // 1st. render pass, draw objects as normal, writing to the stencil buffer
+        glStencilFunc(GL_ALWAYS, 1, 0xFF);
+        glStencilMask(0xFF);
         // cube
         glBindVertexArray(cubeVAO);
         glActiveTexture(GL_TEXTURE0);
@@ -194,13 +215,32 @@ int main()
         ourShader.setMatrix4fv("model", glm::value_ptr(model));
         glDrawArrays(GL_TRIANGLES, 0, 36);
         
-        //plane
-        glBindVertexArray(planeVAO);
-        glBindTexture(GL_TEXTURE_2D, planeTexture);
+        // 2nd. render pass: now draw slightly scaled versions of the objects, this time disabling stencil writing.
+        // Because the stencil buffer is now filled with several 1s. The parts of the buffer that are 1 are not drawn, thus only drawing
+        // the objects' size differences, making it look like borders.
+        outlineShader.use();
+        glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+        glStencilMask(0x00);
+        glDisable(GL_DEPTH_TEST);
+        float scale = 1.1;
+        // cube outline
+        glBindVertexArray(cubeVAO);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, cubeTexture);
         model = glm::mat4(1.0f);
-        ourShader.setMatrix4fv("model", glm::value_ptr(model));
-        glDrawArrays(GL_TRIANGLES, 0, 6);
+        model = glm::translate(model, glm::vec3(-1.0f, 0.01f, -1.0f));//0.01f to fixed z-fighting
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        outlineShader.setMatrix4fv("model", glm::value_ptr(model));
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(2.0f, 0.01f, 0.0f));//0.01f to fixed z-fighting
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        outlineShader.setMatrix4fv("model", glm::value_ptr(model));
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+        
         glBindVertexArray(0);
+        glStencilMask(0xFF);
+        glEnable(GL_DEPTH_TEST);
         
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         glfwSwapBuffers(window);
@@ -214,6 +254,7 @@ int main()
     glDeleteBuffers(1, &planeVBO);
     
     ourShader.clear();
+    outlineShader.clear();
     
     // glfw: terminate, clearing all previously allocated GLFW resources.
     glfwDestroyWindow(window);
