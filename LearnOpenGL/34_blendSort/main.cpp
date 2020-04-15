@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+#include <map>
 
 #include <glad/glad.h>
 #include <glfw/glfw3.h>
@@ -35,7 +36,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("BlendDiscard");
+    GLFWwindow* window = initGLFW("BlendSort");
     if (!window)
     {
         return -1;
@@ -49,7 +50,8 @@ int main()
     
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
-    //glDepthFunc(GL_ALWAYS);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
     // build and compile our shader program
     Shader ourShader("shader.vs", "shader.fs");
@@ -163,10 +165,10 @@ int main()
     // load and create a texture
     unsigned int cubeTexture = loadTexture("marble.jpg");
     unsigned int planeTexture = loadTexture("metal.png");
-    unsigned int transparentTexture = loadTextureClamToEdge("grass.png");
+    unsigned int transparentTexture = loadTextureClamToEdge("window.png");
     
     // transparent grass location
-    std::vector<glm::vec3> grass
+    std::vector<glm::vec3> windows
     {
         glm::vec3(-1.5f, 0.0f, -0.48f),
         glm::vec3( 1.5f, 0.0f, 0.51f),
@@ -220,13 +222,20 @@ int main()
         ourShader.setMatrix4fv("model", glm::value_ptr(model));
         glDrawArrays(GL_TRIANGLES, 0, 6);
         
-        //grass
+        // sort the transparent windows before rendering
+        std::map<float, glm::vec3> sorted;
+        for (unsigned int i = 0; i < windows.size(); i++)
+        {
+            float distance = glm::length(camera.Position - windows[i]);
+            sorted[distance] = windows[i];
+        }
+        //window
         glBindVertexArray(transparentVAO);
         glBindTexture(GL_TEXTURE_2D, transparentTexture);
-        for (GLuint i = 0; i < grass.size(); i++)
+        for (std::map<float, glm::vec3>::reverse_iterator it = sorted.rbegin(); it != sorted.rend(); ++it)
         {
             model = glm::mat4(1.0f);
-            model = glm::translate(model, grass[i]);
+            model = glm::translate(model, it->second);
             ourShader.setMatrix4fv("model", glm::value_ptr(model));
             glDrawArrays(GL_TRIANGLES, 0, 6);
         }
