@@ -35,7 +35,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("Framebuffer");
+    GLFWwindow* window = initGLFW("PostProcess");
     if (!window)
     {
         return -1;
@@ -53,7 +53,24 @@ int main()
     
     // build and compile our shader program
     Shader ourShader("shader.vs", "shader.fs");
-    Shader screenShader("screen.vs", "screen.fs");
+    
+    // normal shader
+    //Shader screenShader("screen.vs", "screen.fs");
+    
+    // inversion shader
+    //Shader screenShader("screen.vs", "inversion.fs");
+    
+    // grayscale shader
+    //Shader screenShader("screen.vs", "grayscale.fs");
+    
+    // sharpen shader
+    //Shader screenShader("screen.vs", "sharpen.fs");
+    
+    // blur shader
+    //Shader screenShader("screen.vs", "blur.fs");
+    
+    // edge shader
+    Shader screenShader("screen.vs", "edge.fs");
     
     // set up vertex data (and buffer(s)) and configure vertex attributes
     float cubeVertices[] = {
@@ -162,8 +179,8 @@ int main()
     glBindVertexArray(0);
     
     // load and create a texture
-    unsigned int cubeTexture = loadTexture("container.jpg");
-    unsigned int planeTexture = loadTexture("metal.png");
+    unsigned int cubeTexture = loadTextureClamToEdge("container.jpg");
+    unsigned int planeTexture = loadTextureClamToEdge("metal.png");
     
     // shader configuration
     ourShader.use();

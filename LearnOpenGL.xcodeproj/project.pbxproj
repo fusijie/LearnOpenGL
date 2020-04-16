@@ -290,13 +290,31 @@
 		8555741D244806E7000533DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8555731A244461E6000533DE /* Cocoa.framework */; };
 		8555741E244806E7000533DE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85557317244461C7000533DE /* CoreFoundation.framework */; };
 		8555741F244806E7000533DE /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855572F724446058000533DE /* libglfw3.a */; };
-		85557421244806E7000533DE /* marble.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555739324458B0C000533DE /* marble.jpg */; };
 		85557422244806E7000533DE /* metal.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555739424458B0C000533DE /* metal.png */; };
 		8555742D244806FE000533DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8555742C244806FE000533DE /* main.cpp */; };
 		8555742E2448070D000533DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555742A244806FE000533DE /* shader.vs */; };
 		8555742F24480710000533DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555742B244806FE000533DE /* shader.fs */; };
 		85557432244807AE000533DE /* screen.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855574302448079F000533DE /* screen.vs */; };
 		85557433244807B0000533DE /* screen.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85557431244807A8000533DE /* screen.fs */; };
+		8555743624483643000533DE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC502243C6D6E0019A4DE /* stb_image.cpp */; };
+		8555743824483643000533DE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 858DC3EC243C6CF50019A4DE /* glad.c */; };
+		8555743A24483643000533DE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8555731C244461F2000533DE /* IOKit.framework */; };
+		8555743B24483643000533DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8555731A244461E6000533DE /* Cocoa.framework */; };
+		8555743C24483643000533DE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85557317244461C7000533DE /* CoreFoundation.framework */; };
+		8555743D24483643000533DE /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855572F724446058000533DE /* libglfw3.a */; };
+		8555744024483643000533DE /* metal.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555739424458B0C000533DE /* metal.png */; };
+		8555744F2448366D000533DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8555744E2448366D000533DE /* main.cpp */; };
+		8555745024483690000533DE /* screen.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555744A2448366D000533DE /* screen.vs */; };
+		8555745124483690000533DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555744B2448366D000533DE /* shader.vs */; };
+		8555745224483690000533DE /* screen.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555744C2448366D000533DE /* screen.fs */; };
+		8555745324483690000533DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555744D2448366D000533DE /* shader.fs */; };
+		8555745424483791000533DE /* container.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15524373AD70019A4DE /* container.jpg */; };
+		85557455244837BA000533DE /* container.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC15524373AD70019A4DE /* container.jpg */; };
+		8555745824483A04000533DE /* inversion.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855574562448397C000533DE /* inversion.fs */; };
+		8555745A24483A72000533DE /* grayscale.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555745924483A22000533DE /* grayscale.fs */; };
+		8555745E24483B3C000533DE /* sharpen.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555745D24483B26000533DE /* sharpen.fs */; };
+		8555746024483C00000533DE /* blur.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555745F24483BCF000533DE /* blur.fs */; };
+		8555746224483D2C000533DE /* edge.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8555746124483CE9000533DE /* edge.fs */; };
 		8571C0BA2434827600A70221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8571C0B92434827600A70221 /* main.cpp */; };
 		858DC1012437147D0019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC0FF2437147D0019A4DE /* shader.vs */; };
 		858DC1022437147D0019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC1002437147D0019A4DE /* shader.fs */; };
@@ -641,12 +659,32 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				85557421244806E7000533DE /* marble.jpg in CopyFiles */,
 				85557422244806E7000533DE /* metal.png in CopyFiles */,
 				8555742E2448070D000533DE /* shader.vs in CopyFiles */,
 				8555742F24480710000533DE /* shader.fs in CopyFiles */,
 				85557432244807AE000533DE /* screen.vs in CopyFiles */,
 				85557433244807B0000533DE /* screen.fs in CopyFiles */,
+				85557455244837BA000533DE /* container.jpg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8555743E24483643000533DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				8555745024483690000533DE /* screen.vs in CopyFiles */,
+				8555745124483690000533DE /* shader.vs in CopyFiles */,
+				8555745224483690000533DE /* screen.fs in CopyFiles */,
+				8555745324483690000533DE /* shader.fs in CopyFiles */,
+				8555744024483643000533DE /* metal.png in CopyFiles */,
+				8555745424483791000533DE /* container.jpg in CopyFiles */,
+				8555745824483A04000533DE /* inversion.fs in CopyFiles */,
+				8555745A24483A72000533DE /* grayscale.fs in CopyFiles */,
+				8555745E24483B3C000533DE /* sharpen.fs in CopyFiles */,
+				8555746024483C00000533DE /* blur.fs in CopyFiles */,
+				8555746224483D2C000533DE /* edge.fs in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,6 +1086,17 @@
 		8555742C244806FE000533DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		855574302448079F000533DE /* screen.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = screen.vs; sourceTree = "<group>"; };
 		85557431244807A8000533DE /* screen.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = screen.fs; sourceTree = "<group>"; };
+		8555744824483643000533DE /* 37PostProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 37PostProcess; sourceTree = BUILT_PRODUCTS_DIR; };
+		8555744A2448366D000533DE /* screen.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = screen.vs; sourceTree = "<group>"; };
+		8555744B2448366D000533DE /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		8555744C2448366D000533DE /* screen.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = screen.fs; sourceTree = "<group>"; };
+		8555744D2448366D000533DE /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		8555744E2448366D000533DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		855574562448397C000533DE /* inversion.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = inversion.fs; sourceTree = "<group>"; };
+		8555745924483A22000533DE /* grayscale.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = grayscale.fs; sourceTree = "<group>"; };
+		8555745D24483B26000533DE /* sharpen.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sharpen.fs; sourceTree = "<group>"; };
+		8555745F24483BCF000533DE /* blur.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blur.fs; sourceTree = "<group>"; };
+		8555746124483CE9000533DE /* edge.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = edge.fs; sourceTree = "<group>"; };
 		8571C0B62434827600A70221 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		8571C0B92434827600A70221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC0FF2437147D0019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
@@ -1587,6 +1636,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8555743924483643000533DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8555743A24483643000533DE /* IOKit.framework in Frameworks */,
+				8555743B24483643000533DE /* Cocoa.framework in Frameworks */,
+				8555743C24483643000533DE /* CoreFoundation.framework in Frameworks */,
+				8555743D24483643000533DE /* libglfw3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8571C0B32434827600A70221 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2097,6 +2157,23 @@
 			path = 36_framebuffer;
 			sourceTree = "<group>";
 		};
+		855574492448366D000533DE /* 37_postProcess */ = {
+			isa = PBXGroup;
+			children = (
+				8555744A2448366D000533DE /* screen.vs */,
+				8555744C2448366D000533DE /* screen.fs */,
+				8555744B2448366D000533DE /* shader.vs */,
+				8555744D2448366D000533DE /* shader.fs */,
+				8555744E2448366D000533DE /* main.cpp */,
+				855574562448397C000533DE /* inversion.fs */,
+				8555745924483A22000533DE /* grayscale.fs */,
+				8555745D24483B26000533DE /* sharpen.fs */,
+				8555745F24483BCF000533DE /* blur.fs */,
+				8555746124483CE9000533DE /* edge.fs */,
+			);
+			path = 37_postProcess;
+			sourceTree = "<group>";
+		};
 		8571C0AD2434827600A70221 = {
 			isa = PBXGroup;
 			children = (
@@ -2152,6 +2229,7 @@
 				855573ED2445A94C000533DE /* 34BlendSort */,
 				8555740A24471944000533DE /* 35CullingFace */,
 				85557428244806E7000533DE /* 36FrameBuffer */,
+				8555744824483643000533DE /* 37PostProcess */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2159,6 +2237,7 @@
 		8571C0B82434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				855574492448366D000533DE /* 37_postProcess */,
 				85557429244806FE000533DE /* 36_framebuffer */,
 				8555740B24471A60000533DE /* 35_cullingFace */,
 				855573EE2445A9A2000533DE /* 34_blendSort */,
@@ -3079,6 +3158,23 @@
 			productReference = 85557428244806E7000533DE /* 36FrameBuffer */;
 			productType = "com.apple.product-type.tool";
 		};
+		8555743424483643000533DE /* 37PostProcess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8555744524483643000533DE /* Build configuration list for PBXNativeTarget "37PostProcess" */;
+			buildPhases = (
+				8555743524483643000533DE /* Sources */,
+				8555743924483643000533DE /* Frameworks */,
+				8555743E24483643000533DE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 37PostProcess;
+			productName = LearnOpenGL;
+			productReference = 8555744824483643000533DE /* 37PostProcess */;
+			productType = "com.apple.product-type.tool";
+		};
 		8571C0B52434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8571C0BD2434827600A70221 /* Build configuration list for PBXNativeTarget "LearnOpenGL" */;
@@ -3483,6 +3579,7 @@
 				855573DA2445A94C000533DE /* 34BlendSort */,
 				855573F724471944000533DE /* 35CullingFace */,
 				85557416244806E7000533DE /* 36FrameBuffer */,
+				8555743424483643000533DE /* 37PostProcess */,
 			);
 		};
 /* End PBXProject section */
@@ -3655,6 +3752,16 @@
 				85557418244806E7000533DE /* stb_image.cpp in Sources */,
 				8555742D244806FE000533DE /* main.cpp in Sources */,
 				8555741A244806E7000533DE /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8555743524483643000533DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8555743624483643000533DE /* stb_image.cpp in Sources */,
+				8555744F2448366D000533DE /* main.cpp in Sources */,
+				8555743824483643000533DE /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4257,6 +4364,30 @@
 			name = Debug;
 		};
 		85557427244806E7000533DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8555744624483643000533DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8555744724483643000533DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -5019,6 +5150,15 @@
 			buildConfigurations = (
 				85557426244806E7000533DE /* Debug */,
 				85557427244806E7000533DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8555744524483643000533DE /* Build configuration list for PBXNativeTarget "37PostProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8555744624483643000533DE /* Debug */,
+				8555744724483643000533DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
