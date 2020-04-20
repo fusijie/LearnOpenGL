@@ -463,6 +463,19 @@
 		855575D3244D8E4B000533DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 855575D2244D8E4B000533DE /* main.cpp */; };
 		855575D4244D8E5E000533DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855575D0244D8E4B000533DE /* shader.vs */; };
 		855575D5244D8E60000533DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855575D1244D8E4B000533DE /* shader.fs */; };
+		855575D8244D94B8000533DE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858DC502243C6D6E0019A4DE /* stb_image.cpp */; };
+		855575DA244D94B8000533DE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 858DC3EC243C6CF50019A4DE /* glad.c */; };
+		855575DC244D94B8000533DE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8555737D244467D8000533DE /* libz.tbd */; };
+		855575DD244D94B8000533DE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8555731C244461F2000533DE /* IOKit.framework */; };
+		855575DE244D94B8000533DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8555731A244461E6000533DE /* Cocoa.framework */; };
+		855575DF244D94B8000533DE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85557317244461C7000533DE /* CoreFoundation.framework */; };
+		855575E0244D94B8000533DE /* libassimp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855572AE24445B4E000533DE /* libassimp.a */; };
+		855575E1244D94B8000533DE /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855572F724446058000533DE /* libglfw3.a */; };
+		855575ED244D94DC000533DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 855575EC244D94DC000533DE /* main.cpp */; };
+		855575EE244D94E5000533DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855575EA244D94DC000533DE /* shader.vs */; };
+		855575EF244D94E6000533DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855575EB244D94DC000533DE /* shader.fs */; };
+		855575F2244D96D1000533DE /* screen.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855575F0244D9521000533DE /* screen.vs */; };
+		855575F3244D96D4000533DE /* screen.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 855575F1244D9532000533DE /* screen.fs */; };
 		8571C0BA2434827600A70221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8571C0B92434827600A70221 /* main.cpp */; };
 		858DC1012437147D0019A4DE /* shader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC0FF2437147D0019A4DE /* shader.vs */; };
 		858DC1022437147D0019A4DE /* shader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 858DC1002437147D0019A4DE /* shader.fs */; };
@@ -998,6 +1011,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		855575E2244D94B8000533DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				855575EE244D94E5000533DE /* shader.vs in CopyFiles */,
+				855575EF244D94E6000533DE /* shader.fs in CopyFiles */,
+				855575F2244D96D1000533DE /* screen.vs in CopyFiles */,
+				855575F3244D96D4000533DE /* screen.fs in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8571C0B42434827600A70221 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -1476,6 +1502,12 @@
 		855575D0244D8E4B000533DE /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		855575D1244D8E4B000533DE /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		855575D2244D8E4B000533DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		855575E8244D94B8000533DE /* 50OffScreenMMSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 50OffScreenMMSA; sourceTree = BUILT_PRODUCTS_DIR; };
+		855575EA244D94DC000533DE /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		855575EB244D94DC000533DE /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		855575EC244D94DC000533DE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		855575F0244D9521000533DE /* screen.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = screen.vs; sourceTree = "<group>"; };
+		855575F1244D9532000533DE /* screen.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = screen.fs; sourceTree = "<group>"; };
 		8571C0B62434827600A70221 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		8571C0B92434827600A70221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		858DC0FF2437147D0019A4DE /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
@@ -2168,6 +2200,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		855575DB244D94B8000533DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855575DC244D94B8000533DE /* libz.tbd in Frameworks */,
+				855575DD244D94B8000533DE /* IOKit.framework in Frameworks */,
+				855575DE244D94B8000533DE /* Cocoa.framework in Frameworks */,
+				855575DF244D94B8000533DE /* CoreFoundation.framework in Frameworks */,
+				855575E0244D94B8000533DE /* libassimp.a in Frameworks */,
+				855575E1244D94B8000533DE /* libglfw3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8571C0B32434827600A70221 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2835,6 +2880,18 @@
 			path = 49_multiSampling;
 			sourceTree = "<group>";
 		};
+		855575E9244D94DC000533DE /* 50_offScreenMMSA */ = {
+			isa = PBXGroup;
+			children = (
+				855575EA244D94DC000533DE /* shader.vs */,
+				855575EB244D94DC000533DE /* shader.fs */,
+				855575EC244D94DC000533DE /* main.cpp */,
+				855575F0244D9521000533DE /* screen.vs */,
+				855575F1244D9532000533DE /* screen.fs */,
+			);
+			path = 50_offScreenMMSA;
+			sourceTree = "<group>";
+		};
 		8571C0AD2434827600A70221 = {
 			isa = PBXGroup;
 			children = (
@@ -2903,6 +2960,7 @@
 				8555758B244D8188000533DE /* 47Planets */,
 				855575AB244D85EA000533DE /* 48PlanetsInstancing */,
 				855575CE244D8E09000533DE /* 49MultiSampling */,
+				855575E8244D94B8000533DE /* 50OffScreenMMSA */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2910,6 +2968,7 @@
 		8571C0B82434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				855575E9244D94DC000533DE /* 50_offScreenMMSA */,
 				855575CF244D8E4B000533DE /* 49_multiSampling */,
 				855575AD244D8648000533DE /* 48_planetsInstancing */,
 				8555758C244D8199000533DE /* 47_planets */,
@@ -4065,6 +4124,23 @@
 			productReference = 855575CE244D8E09000533DE /* 49MultiSampling */;
 			productType = "com.apple.product-type.tool";
 		};
+		855575D6244D94B8000533DE /* 50OffScreenMMSA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855575E5244D94B8000533DE /* Build configuration list for PBXNativeTarget "50OffScreenMMSA" */;
+			buildPhases = (
+				855575D7244D94B8000533DE /* Sources */,
+				855575DB244D94B8000533DE /* Frameworks */,
+				855575E2244D94B8000533DE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 50OffScreenMMSA;
+			productName = LearnOpenGL;
+			productReference = 855575E8244D94B8000533DE /* 50OffScreenMMSA */;
+			productType = "com.apple.product-type.tool";
+		};
 		8571C0B52434827600A70221 /* LearnOpenGL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8571C0BD2434827600A70221 /* Build configuration list for PBXNativeTarget "LearnOpenGL" */;
@@ -4482,6 +4558,7 @@
 				85557578244D8188000533DE /* 47Planets */,
 				85557597244D85EA000533DE /* 48PlanetsInstancing */,
 				855575B8244D8E09000533DE /* 49MultiSampling */,
+				855575D6244D94B8000533DE /* 50OffScreenMMSA */,
 			);
 		};
 /* End PBXProject section */
@@ -4784,6 +4861,16 @@
 				855575BA244D8E09000533DE /* stb_image.cpp in Sources */,
 				855575D3244D8E4B000533DE /* main.cpp in Sources */,
 				855575BC244D8E09000533DE /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855575D7244D94B8000533DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855575D8244D94B8000533DE /* stb_image.cpp in Sources */,
+				855575ED244D94DC000533DE /* main.cpp in Sources */,
+				855575DA244D94B8000533DE /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5709,6 +5796,30 @@
 			};
 			name = Release;
 		};
+		855575E6244D94B8000533DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		855575E7244D94B8000533DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY58VRAZ93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8571C0BB2434827600A70221 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6577,6 +6688,15 @@
 			buildConfigurations = (
 				855575CC244D8E09000533DE /* Debug */,
 				855575CD244D8E09000533DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855575E5244D94B8000533DE /* Build configuration list for PBXNativeTarget "50OffScreenMMSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855575E6244D94B8000533DE /* Debug */,
+				855575E7244D94B8000533DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
