@@ -6,5 +6,5 @@
 - Xcode: 11.4 (11E146)
 - GLFW: 3.3
 - GLAD: 0.1.33
-- GLM: 
+- GLM: 0.9.8.5
 - Assimp: 3.1.0
