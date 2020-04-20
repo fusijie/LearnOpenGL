@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85557548244D7B18000533DE"
-               BuildableName = "45Instancing1"
-               BlueprintName = "45Instancing1"
+               BlueprintIdentifier = "85557560244D7EDC000533DE"
+               BuildableName = "45Instancing1 copy"
+               BlueprintName = "45Instancing1 copy"
                ReferencedContainer = "container:LearnOpenGL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85557548244D7B18000533DE"
-            BuildableName = "45Instancing1"
-            BlueprintName = "45Instancing1"
+            BlueprintIdentifier = "85557560244D7EDC000533DE"
+            BuildableName = "45Instancing1 copy"
+            BlueprintName = "45Instancing1 copy"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85557548244D7B18000533DE"
-            BuildableName = "45Instancing1"
-            BlueprintName = "45Instancing1"
+            BlueprintIdentifier = "85557560244D7EDC000533DE"
+            BuildableName = "45Instancing1 copy"
+            BlueprintName = "45Instancing1 copy"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

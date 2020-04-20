@@ -20,7 +20,7 @@
 int main()
 {
     // init glfw and create window
-    GLFWwindow* window = initGLFW("Instancing1");
+    GLFWwindow* window = initGLFW("Instancing");
     if (!window)
     {
         return -1;
