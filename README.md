@@ -106,7 +106,8 @@
 	- 46-instancedArray: 使用实例化数组绘制的方式实现大量物体的渲染。
 	- 47-planets: 未优化前行星和岩石的绘制。
 	- 48-planetsInstancing: 使用实例化数组的方式绘制行星和岩石。
-	- 49-mutilSampling: 了解抗锯齿和多重采样的原理，
+	- 49-mutilSampling: 了解抗锯齿和多重采样的原理，开启多重采样绘制立方体。
+	- 50-offScreenMMSA: 
 	
 	
 	
