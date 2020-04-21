@@ -19,22 +19,20 @@
 ### Project Structure.
 
 ```
-
 |-- LearnOpenGL.xcodeproj		---> XCode 项目文件
-|-- LearnOpenGL					---> 代码目录
-|-- assimp						---> 模型加载库
-|-- common						---> 通用代码
-	|-- Camera					---> 摄像机类
-	|-- Mesh						---> 网格类
-	|-- Model						---> 模型类
-	|-- Shader					---> 着色器类
-	|-- Utils						---> 工具类
-|-- glad							---> OpenGL 接口加载器 
-|-- glfw							---> OpenGL 的 C 语言库
-|-- glm							---> 数学库
-|-- stb							---> C/C++ 的文件加载库
-	|-- stb_image					---> 图片文件加载库
-
+|-- LearnOpenGL				---> 代码目录
+|-- assimp				---> 模型加载库
+|-- common				---> 通用代码
+	|-- Camera				---> 摄像机类
+	|-- Mesh				---> 网格类
+	|-- Model				---> 模型类
+	|-- Shader				---> 着色器类
+	|-- Utils				---> 工具类
+|-- glad				---> OpenGL 接口加载器 
+|-- glfw				---> OpenGL 的 C 语言库
+|-- glm					---> 数学库
+|-- stb					---> C/C++ 的文件加载库
+	|-- stb_image				---> 图片文件加载库
 ```
 
 
