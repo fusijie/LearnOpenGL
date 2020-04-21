@@ -107,7 +107,7 @@
 	- 47-planets: 未优化前行星和岩石的绘制。
 	- 48-planetsInstancing: 使用实例化数组的方式绘制行星和岩石。
 	- 49-mutilSampling: 了解抗锯齿和多重采样的原理，开启多重采样绘制立方体。
-	- 50-offScreenMMSA: 
+	- 50-offScreenMMSA: 自定义 framebuffer，离屏渲染开启多重采样的立方体。
 	
 	
 	
