@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "85557560244D7EDC000533DE"
-               BuildableName = "45Instancing1 copy"
-               BlueprintName = "45Instancing1 copy"
+               BuildableName = "46InstancedArray"
+               BlueprintName = "46InstancedArray"
                ReferencedContainer = "container:LearnOpenGL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85557560244D7EDC000533DE"
-            BuildableName = "45Instancing1 copy"
-            BlueprintName = "45Instancing1 copy"
+            BuildableName = "46InstancedArray"
+            BlueprintName = "46InstancedArray"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85557560244D7EDC000533DE"
-            BuildableName = "45Instancing1 copy"
-            BlueprintName = "45Instancing1 copy"
+            BuildableName = "46InstancedArray"
+            BlueprintName = "46InstancedArray"
             ReferencedContainer = "container:LearnOpenGL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
