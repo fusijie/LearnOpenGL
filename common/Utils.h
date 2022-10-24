@@ -10,7 +10,7 @@
 #define Utils_h
 
 #include <glad/glad.h>
-#include <gLfw/glfw3.h>
+#include <glfw/glfw3.h>
 #include <stb/stb_image.h>
 
 #include <vector>
